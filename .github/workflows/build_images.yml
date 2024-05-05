@@ -62,7 +62,7 @@ jobs:
     steps:
       - 
         name: Checkout repository
-        uses: actions/checkout@v3.5.3
+        uses: actions/checkout@v4
       - 
         name: Get the version
         id: get_version
@@ -130,7 +130,7 @@ jobs:
       release_tag_name: ${{ steps.create_release.outputs.tag_name }}
       release_body: ${{ steps.create_release.outputs.body }}
       release_html_url: ${{ steps.create_release.outputs.html_url }}
-      release_upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+      release_upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing its ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
     steps:
       - 
         name: Create GitHub release
