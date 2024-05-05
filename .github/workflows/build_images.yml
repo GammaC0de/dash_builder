@@ -40,15 +40,15 @@ jobs:
           #"macos-10.15",
         ]
         config:
-          - {
-              name: "Debian bullseye arm64",
-              basefile: "base_bullseye_arm64",
-              compilefile: "compile_bullseye_arm64",
-              finalfile: "final_bullseye_arm64",
-              arch: "arm64",
-              osname: "bullseye",
-              ostype: "Debian"
-            }
+#          - {
+#              name: "Debian bullseye arm64",
+#              basefile: "base_bullseye_arm64",
+#              compilefile: "compile_bullseye_arm64",
+#              finalfile: "final_bullseye_arm64",
+#              arch: "arm64",
+#              osname: "bullseye",
+#              ostype: "Debian"
+#            }
           - {
               name: "Debian bullseye armhf",
               basefile: "base_bullseye_armhf",
